@@ -18,7 +18,7 @@ public class User {
 	}
 	
 	//Getters and Setters
-	
+	//methods
 	public String getUsername() {
 		return username;
 	}
