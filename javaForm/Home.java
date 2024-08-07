@@ -110,12 +110,13 @@ public class Home extends JFrame {
 					Connection con = DriverManager.getConnection(url,uname,pwd);
 					
 					//sql query
-					String query = "select * from userdata where username = ? and password = ?";
+					String query = "select * from StudentData where username = ? and password = ?";
 					
 					//statement
 					PreparedStatement ps = con.prepareStatement(query);
 					ps.setString(1, username);
 					ps.setString(2, password);
+					
 					
 					ResultSet res = ps.executeQuery();
 					
